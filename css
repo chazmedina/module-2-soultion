@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <meta>
+  <title>
+    Responsive layout </title>
+  <style>
+    * {box-sizing: border-box}
+   
+    h1 {margin-bottom: 15px;}
+    
+{p 
+  border:1px solid blak;
+  background-color: white;
+  width:90%;
+  height:150px;
+  margin-left:auto;
+  marigin-right:auto;
+  font-familiy: Timesnewroman;
+  color: black;
+  
+  /*simple resonsive framework */
+  
+  .row {width: 100%;}
+  
+  /*Large Device*/
+  
+(media min-width:1200px)
+  
+ {.col-lg-1,.col-lg-2,.col-lg-3
+   {
+  float:left;
+     border:1px solid green;}
+   
+   .col-lg-1 {width:33.333%;}
+   .colg-lg- {width: 50%;}
+   .colg-lg- {width: 100%}
+     
+     /*Medium Device*/
+     
+     @media (min-width: 950px) and (max-width:1199px)
+         
+      {col-md-1, col-md-2, col-md-3 {
+          float:left;
+          border:1px solid green;}
+          
+            .col-md-1 {width:33.333%;}
+   .colg-md-2 {width: 50%;}
+   .colg-md-3 {width: 100%}
+          
+          
