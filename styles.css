@@ -1,50 +1,53 @@
-<!DOCTYPE html>
-<head>
-    <meta>
-  <title>
-    Responsive layout </title>
-  <style>
-    * {box-sizing: border-box}
-   
-    h1 {margin-bottom: 15px;}
-    
-{p 
-  border:1px solid black;
-  background-color: white;
-  width:90%;
-  height:150px;
-  margin-left:auto;
-  marigin-right:auto;
-  font-familiy: Timesnewroman;
-  color: green;
-  
-  /*simple resonsive framework */
-  
-  .row {width: 100%;}
-  
-  /*Large Device*/
-  
-(media min-width:1200px)
-  
- {.col-lg-1,.col-lg-2,.col-lg-3
-   {
-  float:left;
-     border:1px solid green;}
-   
-   .col-lg-1 {width:33.333%;}
-   .colg-lg- {width: 50%;}
-   .colg-lg- {width: 100%}
-     
-     /*Medium Device*/
-     
-     @media (min-width: 950px) and (max-width:1199px)
-         
-      {col-md-1, col-md-2, col-md-3 {
-          float:left;
-          border:1px solid green;}
-          
-            .col-md-1 {width:33.333%;}
-   .colg-md-2 {width: 50%;}
-   .colg-md-3 {width: 100%}
-          
-          
+.container {
+        width:100%;
+        overflow:hidden;
+        background:blue;
+        margin:5px auto;
+        padding:5px 0px;
+}
+
+.container ul{
+    padding:0px;
+    margin: 0px;
+}
+.container ul li {
+    list-style:none;
+    float:left;
+    width: 22%;
+    height:300px;
+    background:red;
+    margin: 40px 40px 0px 55px;
+    box-sizing:border-box;
+    border:5px solid white;
+}
+
+
+.container ul li:hover{
+    opacity:0.9;
+}
+
+.container ul li .title:hover{
+    background: blue;
+    color:white;
+}
+.container ul li .title {
+    width:50%;
+    height: 50px;
+    line-height:50px;
+    background: white;
+    text-align:left;
+}
+
+@media (min-width:825px) and (max-width:1100px){
+    .container ul li{
+        width:40%;
+        margin-left:10px;
+    }
+}
+
+@media (max-width:824px){
+    .container ul li{
+        width: 90%;
+        margin:0px auto;
+    }
+}
